@@ -6,7 +6,7 @@
 - [Test Cases and Execution Report](#test-cases-and-execution-report)
 - [Bug Report](#bug-report)
 - [Test Automation Scripts](#test-automation-scripts)
-- [How to Download the Project](#how-to-download-the-project)
+
 
 ---
 
