@@ -16,22 +16,20 @@ public class Testing {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		 // Maximize the browser window
+		dow
         driver.manage().window().maximize();
 
-        // Navigate to the login page
         driver.get("https://app.thepric.com/priclogin");
         
-        // Introduce an explicit wait to ensure the element is clickable
+        
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"__next\"]/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[3]/p/a")));
         
-        // Click the element using JavaScript (as a fallback if needed)
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
 
         WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div")));
         
-        // Click the element using JavaScript (as a fallback if needed)
+ 
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element1);
         
         WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div")));
@@ -50,8 +48,7 @@ public class Testing {
 //      ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,1000)");
       
        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", btn);
-       
-       // Close the browser
+
        Thread.sleep(2000);
        
        driver.findElement(By.name("name")).sendKeys("Rohan Hoval");
@@ -135,7 +132,6 @@ public class Testing {
       
       
       
-        // Close the browser
-//        driver.quit();
+
     }
 	
